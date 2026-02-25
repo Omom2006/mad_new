@@ -1,0 +1,22 @@
+{
+    "name":"Flutter App",
+    "short name":"Flutapp",
+    "start_url":"/index.html",
+    "display":"standalone",
+    "background_color":"#FFE902",
+    "theme_color":"#FFE902",
+    "orientation":"portrait-primary",
+    "icons":[
+        {
+            "src":"img/download (2).png",
+            "type":"image/png",
+            "size":"72*72"
+        },
+        {
+           "src":"img/download (3).png",
+            "type":"image/png",
+            "size":"144*144" 
+            
+        }
+    ]
+}

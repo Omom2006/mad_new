@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Explorer</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    line-height:1.6;
+}
+
+/* Navbar */
+header{
+    background:#0f3460;
+    color:#fff;
+    padding:15px 0;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:#e94560;
+}
+
+/* Hero */
+.hero{
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding-top:60px;
+}
+
+.hero h1{
+    font-size:3rem;
+}
+
+.hero p{
+    margin:20px 0;
+}
+
+.btn{
+    display:inline-block;
+    padding:10px 25px;
+    background:#e94560;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.btn:hover{
+    background:#ff2e63;
+}
+
+/* Sections */
+section{
+    padding:80px 0;
+}
+
+.about{
+    text-align:center;
+}
+
+.destinations{
+    background:#f4f4f4;
+}
+
+.cards{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    flex:1 1 250px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+
+/* Footer */
+footer{
+    background:#0f3460;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    nav ul{
+        flex-direction:column;
+        background:#0f3460;
+        padding:10px;
+    }
+    
+    .hero h1{
+        font-size:2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container">
+<nav>
+<h2>TravelExplorer</h2>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#destinations">Destinations</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<div>
+<h1>Explore The World</h1>
+<p>Discover beautiful places with us.</p>
+<a href="#destinations" class="btn">Start Exploring</a>
+</div>
+</section>
+
+<section id="about" class="about">
+<div class="container">
+<h2>About Us</h2>
+<p>We help travelers find the most amazing destinations across the globe.</p>
+</div>
+</section>
+
+<section id="destinations" class="destinations">
+<div class="container">
+<h2 style="text-align:center; margin-bottom:40px;">Popular Destinations</h2>
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34">
+<h3>Paris</h3>
+<p>The city of lights and love.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1494475673543-6a6a27143b7f">
+<h3>Maldives</h3>
+<p>Crystal clear water and white beaches.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1518684079-3c830dcef090">
+<h3>New York</h3>
+<p>The city that never sleeps.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container" style="text-align:center;">
+<h2>Contact Us</h2>
+<p>Email: info@travelexplorer.com</p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 TravelExplorer | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
